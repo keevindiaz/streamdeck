@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Stream Deck Tablet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="deck">
+    <div class="buttons">
+      <button onclick="sendCommand('chrome')">🖥️ Chrome</button>
+      <button onclick="sendCommand('spotify')">🎧 Spotify</button>
+      <button onclick="sendCommand('obs')">🎥 OBS</button>
+      <button onclick="sendCommand('folder')">📁 Carpeta</button>
+      <button onclick="sendCommand('notepad')">📝 Notas</button>
+      <button onclick="sendCommand('settings')">⚙️ Config</button>
+      <button onclick="sendCommand('lock')">🔒 Bloquear</button>
+      <button onclick="sendCommand('restart')">🔄 Reiniciar</button>
+    </div>
+
+    <div class="info">
+      <span id="internet">📡 Internet: -- Mbps</span>
+      <span id="temp">🌡️ Temp: --°C</span>
+    </div>
+
+    <div class="clock" id="clock">--:--</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
